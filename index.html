@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="washingmachine" class="isOpen">
+        <div id="display">
+            <div id="controls">
+                <h3 id="rinse">20rpm</h3>
+                <h3 id="time">10s</h3>
+            </div>
+           <input type="range" id="timerange" name="points" min="5" max="20"
+            onchange="ontimeChange(this.value)">
+            <input type="range" id="rinserange" name="points" min="20" max="60"
+            onchange="onrinseChange(this.value)">
+            <button id="start" onclick="start()" onchange="onprogrammingChange(this.value)"></button>
+        </div>
+        <button id="open" onclick="openDoor()">Open</button>
+        <button id="close" onclick="closeDoor()">Close</button>
+    </div>
+        
+    <div id="door" ></div>
+    <div id="clothes"></div>
+    <div id="handle"></div>
+    <div id="programming">
+       <h2>Status: <span id="isrunning">Off</span></h2>
+       <h2>Door: <span id="isondoor">Closed</span></h2>
+       <h2>Time: <span id="isontime">-</span></h2>
+       <h2>RPM: <span id="isonrpm">-</span></h2>
+    </div>
+    </div>
+    <div id="accessories">
+        <div id="laundry"></div>
+        <div id="liquid"></div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

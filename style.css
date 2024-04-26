@@ -1,0 +1,206 @@
+img{
+    width:500px;
+}
+
+#washingmachine{
+    position:relative;
+    border:2px solid grey;
+    width:500px;
+    border-radius:15px;
+    height:700px;
+    margin-left:100px;
+}
+
+#controls{
+    background-color:white;
+    border:1px solid grey;
+    width:122px;
+    height:37px;
+    position:absolute;
+    top:57px;
+    left:340px;
+}
+
+#time{
+    width:120px;
+    height:39px;
+    position:absolute;
+    top: -10px;
+    left: -74px;
+}
+
+#rinse{
+    position:absolute;
+    top:-10px;
+    left:36px;
+}
+
+#timerange{
+    position:absolute;
+    top:30px;
+    left:213px;
+    transition: 0.5s;
+}
+
+#rinserange{
+    position:absolute;
+    top:30px;
+    left:343px;
+    transition: 0.5s;
+}
+
+
+#start{
+    border-radius: 50%;
+    position:absolute;
+    padding:6px;
+    top:36px;
+    left: 57px;
+    width: 81px;
+    height: 81px;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+#open{
+    margin:20px;
+    float:right;
+    top:160px;
+    left:280px;
+}
+
+#close, #open{
+    padding:7px;
+    border-radius:50%;
+    color:black;
+    font-weight:bold;
+    transition: 0.5s;
+    background:  #98d9e4;; 
+    border: 3px solid #98d9e4;
+}
+
+#close,#open:hover{
+    background:#03e9f4;
+    box-shadow:0 0 5px #22A1D8;
+}
+
+#close{
+    margin:20px;
+    display:none;
+    float:right;
+    top:160px;
+    left:430px;
+}
+
+#door{
+    background-image: url(images/istockphoto-481547058-612x612.jpg);
+    background-size: cover;
+    position:absolute;
+    left:52px;
+    top:196px;
+    border:3px solid grey;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    font-size:40px;
+    margin-left:100px;
+}
+
+.rotating-door{
+    animation-name:move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#handle{
+    position:absolute;
+    top:365px;
+    left:422px;
+    border:4px solid grey;
+    border-radius:40px;
+    width:25px;
+    height:75px;
+    margin-left:100px;
+}
+
+#clothes{
+    opacity:0.1;
+    background-image: url(images/laundry\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    position:absolute;
+    left:106px;
+    top:248px;
+    margin-left:100px;
+}
+
+#display{
+    background-image: url(images/photo_2024-04-20_16-16-55.jpg);
+    background-size: cover;
+    width:500px;
+    height:152px;
+}
+
+#programming{
+
+    border:2px solid grey;
+    width:320px;
+    height:360px;
+    position:absolute;
+    top:10px;
+    left:623px;
+    background-color:rgb(225, 239, 244);
+    padding:80px;
+    transition: 0.5s;
+    box-sizing:border-box;
+
+}
+
+#programming:hover{
+    border:2px solid #03e9f4;
+    box-shadow:0 0 5px #22A1D8;
+}
+
+
+#laundry{
+    background-image:url(images/stock-photo-baby-laundry.jpg);
+    width:300px;
+    height:250px;
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top:460px;
+    left:620px;
+    
+}
+
+#liquid{
+    background-image:url(images/persil.webp);
+    width:100px;
+    height:150px;
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top:560px;
+    left:920px;
+}
+
+/* #accessories{
+    background-color: beige;
+} */
+@keyframes move {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+  
+

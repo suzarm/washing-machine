@@ -5,6 +5,7 @@ let program = {
     rinse:20,
     time:10,
 }
+
 let timecounter ;
     function start(){
         isRunning = true;
